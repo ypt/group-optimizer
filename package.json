@@ -1,0 +1,10 @@
+{
+  "name": "small-group-sorting-js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "genetic-js": "git://github.com/ypt/genetic-js#5866f0cd",
+    "lodash": "^3.9.1",
+    "simple-statistics": "^0.9.2"
+  }
+}
