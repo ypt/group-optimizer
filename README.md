@@ -14,17 +14,17 @@ Getting started
 After cloning this repo into a directory:
 
 ```
+# install dependencies
 $ npm install
-$ node app
+
+# create an example data set
+# OR, input your own data into input-data.csv as necessary
+$ cp input-data.csv.example input-data.csv
+
+# run the app
+$ npm start
 ```
 
-Most of the logic should reside in the files in the `/lib` directory.
+Most of the logic should reside in the files in the `/lib` directory, which is included in and kicked off from `/app.js`.
 
-TODO's
----
-
-- test with more realistic data
-- refine fitness function
-- refactor into browser runnable version?
-- csv input
-- tests
+For a general genetic algorithm framework, a forked version of [genetic.js](https://github.com/ypt/genetic-js) (which includes a few fixes to run in Node.js) is used. Check it out on [GitHub](https://github.com/ypt/genetic-js) for usage information.
