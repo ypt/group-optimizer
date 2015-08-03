@@ -107,7 +107,8 @@ genetic.generation = function(pop, generation, stats) {
           memberData.fullName + "\t" +
           memberData.gender + "\t" +
           memberData.dayPreferences.toString() + "\t" +
-          memberData.locationPreferences.toString()
+          memberData.locationPreferences.toString() + "\t" +
+          memberData.birthYear
         );
       });
 
