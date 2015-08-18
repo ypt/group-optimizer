@@ -52,8 +52,29 @@ genetic.generation = function(pop, generation, stats) {
         location5: 0
       };
 
+      // item column headers
+      console.log(
+        "Group\t" +
+        "Name\t"+
+        "Gender\t" +
+        "Days\t" +
+        "Locations\t" +
+        "Birth"
+      );
+
       _.each(group, function(memberId){
         var memberData = data.getMemberData(memberId);
+
+        // print item details
+
+        console.log(
+          "Group " + groupCount.toString() + "\t" +
+          memberData.fullName + "\t" +
+          memberData.gender + "\t" +
+          memberData.dayPreferences.toString() + "\t" +
+          memberData.locationPreferences.toString() + "\t" +
+          memberData.birthYear
+        );
 
         // aggregate data for convenience
 
@@ -100,19 +121,10 @@ genetic.generation = function(pop, generation, stats) {
           }
         });
 
-        // print item details
-
-        console.log(
-          "Group " + groupCount.toString() + "\t" +
-          memberData.fullName + "\t" +
-          memberData.gender + "\t" +
-          memberData.dayPreferences.toString() + "\t" +
-          memberData.locationPreferences.toString() + "\t" +
-          memberData.birthYear
-        );
       });
 
       // print aggregate data
+      console.log("Aggregate Data:");
       console.log(aggregateData);
     });
   }
